@@ -4,6 +4,8 @@
 
 "Gitpodify" a cassandra + axonops example
 
+## En complément : Présentation de la solution : https://axonops.com/
+
 [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/crystalloide/Gitpod-Cassandra-axonops)
 
 Cela installera un cluster Cassandra à 3 nœuds avec AxonOps sur un bureau à des fins de développement et de formation. 
