@@ -123,6 +123,7 @@ system_auth  system_schema       system_views
 EXIT;
 ### Affichage : 
 cqlsh> EXIT
+
 gitpod /workspace/Gitpod-Cassandra-axonops (main) $ 
 
 
