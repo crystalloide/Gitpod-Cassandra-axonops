@@ -13,6 +13,8 @@ services:
       interval: 10s
       timeout: 5s
       start_period: 30s
+      retries: 5
+      
   axon-server:
     depends_on:
       elasticsearch:
@@ -25,6 +27,8 @@ services:
       interval: 10s
       timeout: 5s
       start_period: 10s
+      retries: 5
+      
   axon-dash:
     depends_on:
       axon-server:
@@ -39,6 +43,7 @@ services:
       interval: 10s
       timeout: 5s
       start_period: 10s
+      retries: 5
 
   cassandra-0:
     image: registry.axonops.com/axonops-public/axonops-docker/cassandra:4.1
