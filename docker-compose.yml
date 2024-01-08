@@ -9,7 +9,7 @@ services:
     volumes:
       - elasticsearch:/var/lib/elasticsearch
     healthcheck:
-      test: ["CMD", "curl", "-sSf", "127.0.0.1:9200"]
+      test: ["CMD", "curl", "-sf", "127.0.0.1:9200"]
       interval: 10s
       timeout: 5s
       start_period: 30s
