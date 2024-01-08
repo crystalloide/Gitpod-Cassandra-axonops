@@ -13,9 +13,9 @@ services:
       interval: 10s
       timeout: 5s
       start_period: 30s
-      retries: 5
+      retries: 1
     ports:
-      - 9200:9200
+      - "9200:9200"
       
   axon-server:
     depends_on:
@@ -29,7 +29,7 @@ services:
       interval: 10s
       timeout: 5s
       start_period: 10s
-      retries: 5
+      retries: 1
       
   axon-dash:
     depends_on:
@@ -39,7 +39,7 @@ services:
     command: >
       /bin/sh -c "sed -i 's|private_endpoints.*|private_endpoints: http://axon-server:8080|' /etc/axonops/axon-dash.yml && /usr/share/axonops/axon-dash --appimage-extract-and-run"
     ports:
-      - 3000:3000
+      - "3000:3000"
     healthcheck:
       test: ["CMD", "curl", "-sf", "127.0.0.1:3000"]
       interval: 10s
