@@ -18,7 +18,7 @@ Cela installera un cluster Cassandra à 3 nœuds avec AxonOps sur un bureau à d
 
 •	Démarrer le cluster avec la surveillance AxonOps
 
-•	docker compose up -d
+•	docker-compose up -d
 
 •	Attendez quelques minutes que les conteneurs démarrent, puis ouvrez http://127.0.0.1:3000 dans votre navigateur pour voir le tableau de bord AxonOps
 
