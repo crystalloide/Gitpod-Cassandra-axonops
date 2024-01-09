@@ -15,6 +15,7 @@ Cela installera un cluster Cassandra à 3 nœuds avec AxonOps sur un bureau à d
 •	Téléchargez le fichier docker-compose.yml :
 
 •	curl -O https://raw.githubusercontent.com/axonops/axonops-cassandra-dev-cluster/main/docker-compose.yml 
+•	curl -O https://raw.githubusercontent.com/crystalloide/Gitpod-Cassandra-axonops/main/docker-compose.yml
 
 •	Démarrer le cluster avec la surveillance AxonOps
 
