@@ -15,17 +15,22 @@
 
 Cet environnement permet de déployer un cluster Cassandra à 3 nœuds avec AxonOps ( uniquement à des fins de développement et de formation). 
 
-•	Remarque : Si on était sur une machine ou VM sans installation préalable réalisée, il faudrait (pas nécessaire ici puisqu'on utilise Gitpod et le contexte est déjà préchargé)  :
+## 4°) Remarque : Si on était sur une machine ou VM sans installation préalable réalisée, il faudrait (pas nécessaire ici puisqu'on utilise Gitpod et le contexte est déjà préchargé)  :
 
     - Installez Docker avec Docker Compose V2 en suivant les instructions d’installation ici : https://docs.docker.com/compose/install
     - Téléchargez le fichier docker-compose.yml :
         curl -O https://raw.githubusercontent.com/axonops/axonops-cassandra-dev-cluster/main/docker-compose.yml
     - ou une autre possibilité : 
         curl -O https://raw.githubusercontent.com/crystalloide/Gitpod-Cassandra-axonops/main/docker-compose.yml
-    -Démarrer ensuite le cluster avec la surveillance AxonOps :
-        docker-compose up -d
-    - Attendre quelques minutes que les conteneurs démarrent, puis ouvrir http://127.0.0.1:3000 dans votre navigateur pour voir le tableau de bord AxonOps
 
+## 5°) Démarrage du cluster de démonstration :
+
+        docker-compose up -d
+        
+### Il ne reste plus qu'à attendre quelques minutes que les conteneurs démarrent, 
+### puis à ouvrir l'url dans votre navigateur pour voir le tableau de bord AxonOps
+### L'url par défaut est http://127.0.0.1:3000
+### Mais dans notre cas, cela dépend du lien instancié, toujours sur le port 3000 
 
 ## Affichons les conteneurs en cours d'exécution : 
 
