@@ -15,7 +15,12 @@
 
 Cet environnement permet de déployer un cluster Cassandra à 3 nœuds avec AxonOps ( uniquement à des fins de développement et de formation). 
 
-## 4°) Remarque : Si on était sur une machine ou VM sans installation préalable réalisée, il faudrait (pas nécessaire ici puisqu'on utilise Gitpod et le contexte est déjà préchargé)  :
+## 4°) Remarque : nous n'avoons pas besoi nde le faire ici, 
+
+## mais si on était sur une machine ou VM sans installation préalable, 
+
+##     il faudrait réaliser les opérations suivantes :
+
 
     - Installez Docker avec Docker Compose V2 en suivant les instructions d’installation ici : https://docs.docker.com/compose/install
     - Téléchargez le fichier docker-compose.yml :
