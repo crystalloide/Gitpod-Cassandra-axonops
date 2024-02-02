@@ -15,19 +15,23 @@
 
 ## Cet environnement permet de déployer un cluster Cassandra à 3 nœuds avec AxonOps 
 ## Attention : c'est ici uniquement à des fins de développement et de formation 
-
-
+ 
+ 
 
 ## 4°) Remarque : nous n'avons pas besoin de le faire ici, 
 ##     mais si on était sur une machine ou VM sans installation préalable, 
 ##     il faudrait réaliser les opérations suivantes :
 
-    - Installer docker et docker compose en suivant les instructions d’installation ici : https://docs.docker.com/compose/install
-    - Télécharger le fichier docker-compose.yml :
-        curl -O https://raw.githubusercontent.com/axonops/axonops-cassandra-dev-cluster/main/docker-compose.yml
-    - ou une autre variante : 
-        curl -O https://raw.githubusercontent.com/crystalloide/Gitpod-Cassandra-axonops/main/docker-compose.yml
+   - Installer docker et docker compose en suivant les instructions d’installation ici : https://docs.docker.com/compose/install
+   - Télécharger le fichier docker-compose.yml :
 
+    curl -O https://raw.githubusercontent.com/axonops/axonops-cassandra-dev-cluster/main/docker-compose.yml
+    
+   - ou une autre variante :
+
+    curl -O https://raw.githubusercontent.com/crystalloide/Gitpod-Cassandra-axonops/main/docker-compose.yml
+
+  
 
 
 ## 5°) Démarrage du cluster de démonstration :
