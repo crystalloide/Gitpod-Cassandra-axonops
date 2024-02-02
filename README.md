@@ -8,12 +8,18 @@
 
 ### Et si vous le souhaitez pour aller plus loin dans la présentation de la solution : https://axonops.com/
 
+
+
 ## 2°) Pour voir vos environnements Gitpod éventuellement déjà provisionnés : [Cliquez ici](https://gitpod.io/workspaces)
+
+
 
 ## 3°) Pour instancier l'environnement Gitpod de démonstration accessible avec un simple navigateur web :
 [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/crystalloide/Gitpod-Cassandra-axonops)
 
 Cet environnement permet de déployer un cluster Cassandra à 3 nœuds avec AxonOps ( uniquement à des fins de développement et de formation). 
+
+
 
 ## 4°) Remarque : nous n'avons pas besoin de le faire ici, 
 ##     mais si on était sur une machine ou VM sans installation préalable, 
@@ -24,6 +30,8 @@ Cet environnement permet de déployer un cluster Cassandra à 3 nœuds avec Axon
         curl -O https://raw.githubusercontent.com/axonops/axonops-cassandra-dev-cluster/main/docker-compose.yml
     - ou une autre variante : 
         curl -O https://raw.githubusercontent.com/crystalloide/Gitpod-Cassandra-axonops/main/docker-compose.yml
+
+
 
 ## 5°) Démarrage du cluster de démonstration :
 
@@ -47,7 +55,8 @@ docker ps -a
     d42b768f74fb   docker.elastic.co/elasticsearch/elasticsearch:7.17.12                   "/bin/tini -- /usr/l…"   7 minutes ago   Up 7 minutes (healthy)   9200/tcp, 9300/tcp                                                                       gitpod-cassandra-axonops-elasticsearch-1
 
 
-# Monitoring a Cassandra Cluster in Docker :
+
+## 6°) Monitoring du cluster Cassandra dans docker :
 
 nodetool est un programme en ligne de commande qui offre un large éventail de façons d'examiner un cluster, de comprendre son activité et de le modifier.
 
