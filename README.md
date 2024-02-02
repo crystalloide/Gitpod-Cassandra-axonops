@@ -6,7 +6,8 @@
 
 ### Pour aller plus loin dans la présentation de la solution : https://axonops.com/
 
-[# Pour voir vos environnements Gitpod éventuellement déjà provisionnés :](https://gitpod.io/workspaces)
+# Pour voir vos environnements Gitpod éventuellement déjà provisionnés :
+[Cliquez ici :](https://gitpod.io/workspaces)
 
 [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/crystalloide/Gitpod-Cassandra-axonops)
 
