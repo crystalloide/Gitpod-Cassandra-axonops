@@ -13,9 +13,9 @@
 ## 3°) Pour instancier l'environnement Gitpod de démonstration accessible avec un simple navigateur web :
 [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/crystalloide/Gitpod-Cassandra-axonops)
 
-Cela installera un cluster Cassandra à 3 nœuds avec AxonOps sur un bureau à des fins de développement et de formation. 
+Cet environnement permet de déployer un cluster Cassandra à 3 nœuds avec AxonOps ( uniquement à des fins de développement et de formation). 
 
-•	Si on était sur une VM sans installation préalable réalisée, il faudrait (pas nécessaire ici puisqu'on utilise Gitpod et le contexte est déjà préchargé)  :
+•	Remarque : Si on était sur une machine ou VM sans installation préalable réalisée, il faudrait (pas nécessaire ici puisqu'on utilise Gitpod et le contexte est déjà préchargé)  :
 
     - Installez Docker avec Docker Compose V2 en suivant les instructions d’installation ici : https://docs.docker.com/compose/install
     - Téléchargez le fichier docker-compose.yml :
