@@ -1,10 +1,10 @@
 # Cassandra-axon-ops-example-with-gitpod
 
-Pour information, AxonOps a une grande expérience dans la migration des clients à partir du support DataStax Enterprise et Luna. 
+### Pour information, AxonOps a une grande expérience dans la migration des clients à partir du support DataStax Enterprise et Luna. 
 
-Nous allons le voir en service sur un cas de démonstration :
+### Nous allons le voir en service sur un cas de démonstration :
 
-## Pour aller plus loin ; Présentation de la solution : https://axonops.com/
+### Pour aller plus loin dans la présentation de la solution : https://axonops.com/
 
 [# Pour voir vos environnements Gitpod éventuellement déjà provisionnés :](https://gitpod.io/workspaces)
 
