@@ -37,7 +37,7 @@
 
 ## 5°) Démarrage du cluster de démonstration :
 
-        docker-compose up -d
+    docker-compose up -d
         
 ### Il ne reste plus qu'à attendre quelques minutes que les conteneurs démarrent, 
 ### puis à ouvrir l'url dans votre navigateur pour voir le tableau de bord AxonOps
