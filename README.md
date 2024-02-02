@@ -15,10 +15,8 @@
 
 Cet environnement permet de déployer un cluster Cassandra à 3 nœuds avec AxonOps ( uniquement à des fins de développement et de formation). 
 
-## 4°) Remarque : nous n'avoons pas besoi nde le faire ici, 
-
-## mais si on était sur une machine ou VM sans installation préalable, 
-
+## 4°) Remarque : nous n'avons pas besoin de le faire ici, 
+##     mais si on était sur une machine ou VM sans installation préalable, 
 ##     il faudrait réaliser les opérations suivantes :
 
 
