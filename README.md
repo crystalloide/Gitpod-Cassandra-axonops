@@ -1,4 +1,4 @@
-# Cassandra-axon-ops-example-with-gitpod
+# Exemple de cluster Cassandra et de solution de monitoring AxonOps dans un environnement gitpod
 
 ## 1°) Quelques mots sur Axonops :
 
