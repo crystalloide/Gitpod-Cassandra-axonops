@@ -13,7 +13,8 @@
 ## 3°) Pour instancier l'environnement Gitpod de démonstration accessible avec un simple navigateur web :
 [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/crystalloide/Gitpod-Cassandra-axonops)
 
-Cet environnement permet de déployer un cluster Cassandra à 3 nœuds avec AxonOps ( uniquement à des fins de développement et de formation). 
+## Cet environnement permet de déployer un cluster Cassandra à 3 nœuds avec AxonOps 
+## Attention : c'est ici uniquement à des fins de développement et de formation 
 
 
 
