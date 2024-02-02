@@ -169,13 +169,16 @@ L'utilitaire nodetool permet notamment :
 
     system       system_distributed  system_traces  system_virtual_schema
     system_auth  system_schema       system_views 
-    
+
+## 11°) On sort du client CQL en ligne de commande : 
+
     EXIT;
+
     
 ### Affichage : 
 
     cqlsh> EXIT
-    
+      
     gitpod /workspace/Gitpod-Cassandra-axonops (main) $ 
     
 
