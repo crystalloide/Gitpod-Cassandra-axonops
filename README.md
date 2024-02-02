@@ -3,16 +3,12 @@
 ## 1°) Quelques mots sur Axonops :
 
 ### Pour information, AxonOps a une grande expérience dans la migration des clients à partir du support DataStax Enterprise et Luna. 
-
 ### Nous allons le voir en service sur un cas de démonstration.
-
 ### Et si vous le souhaitez pour aller plus loin dans la présentation de la solution : https://axonops.com/
-
-
+ 
 
 ## 2°) Pour voir vos environnements Gitpod éventuellement déjà provisionnés : [Cliquez ici](https://gitpod.io/workspaces)
-
-
+ 
 
 ## 3°) Pour instancier l'environnement Gitpod de démonstration accessible avec un simple navigateur web :
 [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/crystalloide/Gitpod-Cassandra-axonops)
