@@ -7,7 +7,7 @@
 ### Et si vous le souhaitez pour aller plus loin dans la présentation de la solution : https://axonops.com/
  
 
-## 2°) Pour voir vos environnements Gitpod éventuellement déjà provisionnés : [cliquer ici](https://gitpod.io/workspaces)
+## 2°) Avant de commencer, pour voir vos environnements Gitpod éventuellement déjà provisionnés : [cliquer ici](https://gitpod.io/workspaces)
  
 
 ## 3°) Pour instancier l'environnement Gitpod de démonstration accessible avec un simple navigateur web :
