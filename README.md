@@ -1,14 +1,12 @@
-[# Pour voir vos environnements Gitpod éventuellement déjà provisionnés :](https://gitpod.io/workspaces)
+# Cassandra-axon-ops-example-with-gitpod
 
 Pour information, AxonOps a une grande expérience dans la migration des clients à partir du support DataStax Enterprise et Luna. 
 
 Nous allons le voir en service sur un cas de démonstration :
 
-# Cassandra-axon-ops-example-with-gitpod
+## Pour aller plus loin ; Présentation de la solution : https://axonops.com/
 
-"Gitpodify" a cassandra + axonops example
-
-## En complément : Présentation de la solution : https://axonops.com/
+[# Pour voir vos environnements Gitpod éventuellement déjà provisionnés :](https://gitpod.io/workspaces)
 
 [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/crystalloide/Gitpod-Cassandra-axonops)
 
