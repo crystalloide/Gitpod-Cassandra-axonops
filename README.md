@@ -10,7 +10,7 @@
 
 ## 2°) Pour voir vos environnements Gitpod éventuellement déjà provisionnés : [Cliquez ici](https://gitpod.io/workspaces)
 
-## 3°) Pour instancier un environnement Gitpod et avoir la démonstration avec un simple navigateur web :
+## 3°) Pour instancier l'environnement Gitpod de démonstration accessible avec un simple navigateur web :
 [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/crystalloide/Gitpod-Cassandra-axonops)
 
 Cela installera un cluster Cassandra à 3 nœuds avec AxonOps sur un bureau à des fins de développement et de formation. 
