@@ -46,7 +46,8 @@
 
 ## Affichons les conteneurs en cours d'exécution : 
 
-docker ps -a 
+    docker ps -a 
+     
 
     CONTAINER ID   IMAGE                                                                   COMMAND                  CREATED         STATUS                   PORTS                                                                                    NAMES
     7e7da8c4ed35   registry.axonops.com/axonops-public/axonops-docker/cassandra:4.1        "/axonops-entrypoint…"   7 minutes ago   Up 5 minutes (healthy)   7000-7001/tcp, 7199/tcp, 9042/tcp, 9160/tcp, 0.0.0.0:9044->9044/tcp, :::9044->9044/tcp   gitpod-cassandra-axonops-cassandra-2-1
