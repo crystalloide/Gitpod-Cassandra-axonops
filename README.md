@@ -64,7 +64,7 @@
 
 nodetool est un programme en ligne de commande qui offre un large éventail de façons d'examiner un cluster, de comprendre son activité et de le modifier.
 
-    L'utilitaire nodetool permet notamment : 
+L'utilitaire nodetool permet notamment : 
     - d'obtenir des statistiques sur le cluster
     - de voir les plages de token maintenues par chaque nœud 
     - de réaliser une variété de tâches de gestion :
