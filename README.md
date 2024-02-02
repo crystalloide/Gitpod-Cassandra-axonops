@@ -2,7 +2,7 @@
 
 ## 1°) Quelques mots sur Axonops :
 
-### Pour information, AxonOps a une grande expérience dans la migration des clients à partir du support DataStax Enterprise et Luna. 
+### Les solutions AxonOps apportent une alternative aux solutions classiques de DataStax Enterprise et du support Luna. 
 ### Nous allons le voir en service sur un cas de démonstration.
 ### Et si vous le souhaitez pour aller plus loin dans la présentation de la solution : https://axonops.com/
  
