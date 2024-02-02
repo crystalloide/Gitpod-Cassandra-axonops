@@ -66,9 +66,10 @@ nodetool est un programme en ligne de commande qui offre un large éventail de f
         - les snapshots
         - etc.
 
-## Utilisons donc nodetool :  ici la commande "nodetool status" lancée sur n'importe lequel des nœuds pour voir l'état des nœuds du cluster :
+## 7°) Utilisons donc nodetool :
+##     ici la commande "nodetool status" lancée sur n'importe lequel des nœuds pour voir l'état des nœuds du cluster :
 
-docker exec -it gitpod-cassandra-axonops-cassandra-2-1 nodetool status
+    docker exec -it gitpod-cassandra-axonops-cassandra-2-1 nodetool status
 
 ### Affichage :
     Datacenter: dc1
@@ -83,7 +84,7 @@ docker exec -it gitpod-cassandra-axonops-cassandra-2-1 nodetool status
 
 ## The nodetool info command provides additional details :
 
-docker exec -it gitpod-cassandra-axonops-cassandra-2-1 nodetool info
+    docker exec -it gitpod-cassandra-axonops-cassandra-2-1 nodetool info
 
 ### Affichage :
     gitpod /workspace/Gitpod-Cassandra-axonops (main) $ docker exec -it gitpod-cassandra-axonops-cassandra-2-1 nodetool info
@@ -106,9 +107,9 @@ docker exec -it gitpod-cassandra-axonops-cassandra-2-1 nodetool info
     Token                  : (invoke with -T/--tokens to see all 16 tokens)
 
 
-## Pour voir les détails de quels nœuds possèdent quels ranges de token, on va utiliser "nodetool ring" :
+## 8°) Pour voir les détails de quels nœuds possèdent quels ranges de token, on va utiliser "nodetool ring" :
 
-docker exec -it gitpod-cassandra-axonops-cassandra-2-1 nodetool ring
+    docker exec -it gitpod-cassandra-axonops-cassandra-2-1 nodetool ring
 
 ### Affichage : 
 
@@ -128,9 +129,9 @@ docker exec -it gitpod-cassandra-axonops-cassandra-2-1 nodetool ring
       To view status related info of a node use "nodetool status" instead.
   
 
-## Utilisons le client CQL en ligne de commande "cqlsh" :  
+## 9°) Utilisons maintenant le client CQL en ligne de commande : cqlsh  
 
-docker exec -it gitpod-cassandra-axonops-cassandra-0-1 cqlsh
+    docker exec -it gitpod-cassandra-axonops-cassandra-0-1 cqlsh
 
 
 ### Affichage : 
@@ -139,6 +140,8 @@ docker exec -it gitpod-cassandra-axonops-cassandra-0-1 cqlsh
     [cqlsh 6.1.0 | Cassandra 4.1.3 | CQL spec 3.4.6 | Native protocol v5]
     Use HELP for help.
 
+
+## 10°) La commande DESCRIBE pour en savoir plus sur les keyspaces présents :  
 
     DESCRIBE KEYSPACES;
 
