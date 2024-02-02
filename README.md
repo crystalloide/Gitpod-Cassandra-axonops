@@ -23,10 +23,11 @@
 ##     il faudrait réaliser les opérations suivantes :
 
    - Installer docker et docker compose en suivant les instructions d’installation ici : https://docs.docker.com/compose/install
+     
    - Télécharger le fichier docker-compose.yml :
 
     curl -O https://raw.githubusercontent.com/axonops/axonops-cassandra-dev-cluster/main/docker-compose.yml
-    
+     
    - ou une autre variante :
 
     curl -O https://raw.githubusercontent.com/crystalloide/Gitpod-Cassandra-axonops/main/docker-compose.yml
