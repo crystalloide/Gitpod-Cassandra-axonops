@@ -1,5 +1,9 @@
 [# Test](https://gitpod.io/workspaces)
 
+Pour information, AxonOps a une grande expérience dans la migration des clients à partir du support DataStax Enterprise et Luna. 
+
+Nous allons le voir en service sur un cas de démonstration :
+
 # Cassandra-axon-ops-example-with-gitpod
 
 "Gitpodify" a cassandra + axonops example
@@ -10,26 +14,20 @@
 
 Cela installera un cluster Cassandra à 3 nœuds avec AxonOps sur un bureau à des fins de développement et de formation. 
 
-•	Installez Docker avec Docker Compose V2 en suivant les instructions d’installation ici : https://docs.docker.com/compose/install
+•	Si on était sur une VM sans installation préalable réalisée, il faudrait (pas nécessaire ici puisqu'on utilise Gitpod et le contexte est déjà préchargé)  :
 
-•	Téléchargez le fichier docker-compose.yml :
-
-•	curl -O https://raw.githubusercontent.com/axonops/axonops-cassandra-dev-cluster/main/docker-compose.yml
-
-•	curl -O https://raw.githubusercontent.com/crystalloide/Gitpod-Cassandra-axonops/main/docker-compose.yml
-
-•	Démarrer le cluster avec la surveillance AxonOps
-
-•	docker-compose up -d
-
-•	Attendez quelques minutes que les conteneurs démarrent, puis ouvrez http://127.0.0.1:3000 dans votre navigateur pour voir le tableau de bord AxonOps
-
-AxonOps a une grande expérience dans la migration des clients à partir du support DataStax Enterprise et Luna. 
-
-Nous sommes convaincus que nous pouvons fournir une réduction significative des coûts et des services d’assistance personnalisés alignés sur vos besoins spécifiques.
+    - Installez Docker avec Docker Compose V2 en suivant les instructions d’installation ici : https://docs.docker.com/compose/install
+    - Téléchargez le fichier docker-compose.yml :
+        curl -O https://raw.githubusercontent.com/axonops/axonops-cassandra-dev-cluster/main/docker-compose.yml
+    - ou une autre possibilité : 
+        curl -O https://raw.githubusercontent.com/crystalloide/Gitpod-Cassandra-axonops/main/docker-compose.yml
+    -Démarrer ensuite le cluster avec la surveillance AxonOps :
+        docker-compose up -d
+    - Attendre quelques minutes que les conteneurs démarrent, puis ouvrir http://127.0.0.1:3000 dans votre navigateur pour voir le tableau de bord AxonOps
 
 
 ## Affichons les conteneurs en cours d'exécution : 
+
 docker ps -a 
 
     CONTAINER ID   IMAGE                                                                   COMMAND                  CREATED         STATUS                   PORTS                                                                                    NAMES
@@ -41,15 +39,21 @@ docker ps -a
     d42b768f74fb   docker.elastic.co/elasticsearch/elasticsearch:7.17.12                   "/bin/tini -- /usr/l…"   7 minutes ago   Up 7 minutes (healthy)   9200/tcp, 9300/tcp                                                                       gitpod-cassandra-axonops-elasticsearch-1
 
 
-# Monitoring a Cassandra Cluster in Docker
+# Monitoring a Cassandra Cluster in Docker :
 
-nodetool is a command-line program that offers a rich array of ways to look at your cluster, understand its activity, and modify it. 
+nodetool est un programme en ligne de commande qui offre un large éventail de façons d'examiner un cluster, de comprendre son activité et de le modifier.
 
-nodetool lets you get statistics about the cluster, see the ranges each node maintains, and a variety of management tasks 
+    L'utilitaire nodetool permet notamment : 
+    - d'obtenir des statistiques sur le cluster
+    - de voir les plages de token maintenues par chaque nœud 
+    - de réaliser une variété de tâches de gestion :
+        - comme le déplacement de données d'un nœud à un autre
+        - la mise hors service de nœuds, la réparation de nœuds
+        - les réparations
+        - les snapshots
+        - etc.
 
-such as moving data from one node to another, decommissioning nodes, repairing nodes, and more.
-
-## Utilisons nodetool :  you can use the nodetool status command on any of the nodes to see the status of the nodes in the cluster : 
+## Utilisons donc nodetool :  ici la commande "nodetool status" lancée sur n'importe lequel des nœuds pour voir l'état des nœuds du cluster :
 
 docker exec -it gitpod-cassandra-axonops-cassandra-2-1 nodetool status
 
@@ -64,7 +68,7 @@ docker exec -it gitpod-cassandra-axonops-cassandra-2-1 nodetool status
     UN  172.18.0.2  109.38 KiB  16      64.7%             e415bf87-8f58-41c3-b3be-ee800006a71c  rack0
 
 
-## The nodetool info command provides additional details:
+## The nodetool info command provides additional details :
 
 docker exec -it gitpod-cassandra-axonops-cassandra-2-1 nodetool info
 
@@ -89,11 +93,12 @@ docker exec -it gitpod-cassandra-axonops-cassandra-2-1 nodetool info
     Token                  : (invoke with -T/--tokens to see all 16 tokens)
 
 
-## To see details of which nodes own which portions of the token ring, use nodetool ring:
+## Pour voir les détails de quels nœuds possèdent quels ranges de token, on va utiliser "nodetool ring" :
 
 docker exec -it gitpod-cassandra-axonops-cassandra-2-1 nodetool ring
 
 ### Affichage : 
+
     Datacenter: dc1
     ==========
     Address          Rack        Status State   Load            Owns                Token                                       
@@ -110,7 +115,7 @@ docker exec -it gitpod-cassandra-axonops-cassandra-2-1 nodetool ring
       To view status related info of a node use "nodetool status" instead.
   
 
-## Utilisons cqlsh :  
+## Utilisons le client CQL en ligne de commande "cqlsh" :  
 
 docker exec -it gitpod-cassandra-axonops-cassandra-0-1 cqlsh
 
@@ -134,12 +139,10 @@ docker exec -it gitpod-cassandra-axonops-cassandra-0-1 cqlsh
     EXIT;
     
 ### Affichage : 
+
     cqlsh> EXIT
     
     gitpod /workspace/Gitpod-Cassandra-axonops (main) $ 
     
 
 # Have fun!
-
-
-
