@@ -36,6 +36,7 @@ services:
       axon-server:
         condition: service_healthy
     image: registry.axonops.com/axonops-public/axonops-docker/axon-dash:latest
+    user: root
     command: >
       /bin/sh -c "sed -i 's|private_endpoints.*|private_endpoints: http://axon-server:8080|' /etc/axonops/axon-dash.yml && /usr/share/axonops/axon-dash --appimage-extract-and-run"
     ports:
