@@ -100,7 +100,7 @@ L'utilitaire nodetool permet notamment :
     UN  172.18.0.2  109.38 KiB  16      64.7%             e415bf87-8f58-41c3-b3be-ee800006a71c  rack0
 
 
-## The nodetool info command provides additional details :
+## La commande "nodetool info" donne d'autres informations complémentaires :
 
     docker exec -it gitpod-cassandra-axonops-cassandra-2-1 nodetool info
 
